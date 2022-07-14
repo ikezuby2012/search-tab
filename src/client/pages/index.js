@@ -7,7 +7,7 @@ const Index = () => {
 
    const getValue = useCallback(
       (data) => {
-         console.log(data);
+         // console.log(data);
          setSeaValue(data);
       },
       [seaValue]
