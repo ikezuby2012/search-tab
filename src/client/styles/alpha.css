@@ -1,0 +1,187 @@
+:root {
+  --color-grey-light-1: #f9f7f6;
+  --color-grey-light-2: #aaa;
+  --color-secondary: #101d2c;
+  --color-primary: #8095e3;
+  --color-primary-1: #2e3341;
+  --color-primary-dark: #3b2ea5;
+  --color-blue: #008bff;
+  --color-blue-primary: #00007e;
+  --color-blue-primary-1: #bdcbff;
+  --color-blue-primary-2: #e2f2ff;
+  --bg-color-1: #ffffff;
+  --dark-text: #0a0800;
+  --grey-text: #7e8086;
+  --color-grey-dark-1: #54483a;
+  --color-grey-dark-2: #6d5d4b;
+  --grey-light-1: #faf9f9;
+  --grey-light-2: #f4f2f2;
+  --grey-light-3: #f0eeee;
+  --grey-light-4: #ccc;
+  --color-dark: #1f1f1f;
+  --grey-dark-1: rgb(58, 58, 58);
+  --grey-dark-2: #777;
+  --grey-dark-3: #999;
+  --headerTop: #f7f3ee;
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #916b2d;
+  --warning-red: rgb(243, 64, 64);
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-dark-1: 0 2rem 6rem rgba(0, 0, 0, 0.08);
+  --shadow-dark-2: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+  --shadow-dark-3: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "nunito", sans-serif;
+  color: var(--color-grey-dark-1);
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: var(--color-grey-light-1);
+}
+
+.container {
+  background-color: var(--bg-color-1);
+  margin: 0.3rem;
+  height: auto;
+  max-width: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+.header {
+  background-color: var(--headerTop);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: var(--shadow-dark-3);
+  height: 7rem;
+}
+.header-form {
+  flex: 0 0 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.header-form_input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: #fff;
+  border: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+  transition: all 0.2s;
+  width: 90%;
+  margin-left: -1.9rem;
+  font-size: 1.5rem;
+}
+.header-form_input:focus {
+  outline: none;
+  font-size: 1.5rem;
+  background-color: var(--grey-light-2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+}
+.header-form_input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--grey-dark-3);
+  font-style: italic;
+}
+.header-form_button {
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+}
+@media only screen and (max-width: 33.75em) {
+  .header-form_button {
+    position: absolute;
+  }
+}
+
+.body-buttons {
+  margin: 1rem 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+.body-btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  padding: 0.8rem 3rem;
+  transition: all 0.3s;
+}
+.body-btn:hover {
+  background-image: linear-gradient(to left, var(--color-primary), var(--color-primary-dark));
+}
+.body :is(.body-img, .avatar-img) {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.body :is(.body-aside, .avatar-aside) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.body-searchTab {
+  margin: 2rem 6rem;
+}
+.body-searchTab > ul > li {
+  margin: 0.7rem 0;
+}
+.body-list {
+  list-style: none;
+}
+.body-listItem {
+  display: flex;
+  flex-direction: column;
+}
+.body-date {
+  align-self: flex-start;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid black;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+.body-details > span {
+  display: block;
+  font-size: 1.8rem;
+}
+
+/*# sourceMappingURL=alpha.css.map */
