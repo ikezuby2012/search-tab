@@ -23,7 +23,7 @@ const Header = ({ parentCallback }) => {
                placeholder={`search for users`}
                onChange={(e) => {
                   setSearchValue(e.target.value);
-                  parentCallback(e.target.value)
+                  parentCallback(e.target.value);
                }}
             />
          </form>
